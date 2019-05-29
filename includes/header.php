@@ -18,7 +18,7 @@
   <div class="virsus">
       <nav>
           <ul>
-            <li><a href="Parduotuve">Pradžia</a></li>
+            <li><a href="index.php">Pradžia</a></li>
             <li><a href="atsiliepimai">Pirkėjų atsiliepimai</a></li>
             <li><a href="kontaktai">Kontaktai</a></li>
 
