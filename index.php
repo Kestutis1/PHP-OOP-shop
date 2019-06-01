@@ -2,14 +2,10 @@
 include_once("includes/header.php");
 include_once("includes/dbh.php");
 include("includes/kategorijos.php");
+include("includes/preke.php");
 
     $objectDBH = new Dbh;
     $objectDBH->connect();
-
-
-
-
-
 
 // IDEA: Pradedu informacijos išvedimą į ekraną.
     $display_block = "<h1>Prekių kategorijos</h1>
@@ -30,26 +26,7 @@ include("includes/kategorijos.php");
               $objectKat->kategorijos();
             }
 
-
-
-
-          //   $objectKat = new Kat;
-          //   $objectKat->kategorijos();
-          //
-          //   if (isset($_GET["cat_id"])) {
-          //        $cat_id = $_GET["cat_id"];
-          // // IDEA: Pateikiam prekių sarašą pagal kategorijos id.
-          //      //   $objectasPRE = new Pre($cat_id);
-          //      // echo $objectasPRE->prekes();
-          //      $objectasPRE = new Pre($cat_id);
-          //      $prekePavadinias = $objectasPRE->prekes();
-          //      $display_block.= $prekePavadinias;
-
-
-
    echo "</div></div></div></article></section>";
-
-
 
 include_once("includes/footer.php");
 
