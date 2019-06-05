@@ -1,5 +1,5 @@
 <footer>
-  <div>
+  <!-- <div>
     <div id="p2" class="cookiePopup">
       <div class="clearfix cookiePopupWrapper">
         <div class="cookiePopupText">Siekdami lankytojams pasiūlyti geresnes Parduotuvės naršymo sąlygas, naudojame slapukus (angl. cookies).
@@ -11,7 +11,7 @@
           </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
                                 <p>&copy; 2018 Kęstutis Morkevičius</p>
 
