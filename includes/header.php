@@ -8,7 +8,7 @@
         <meta name="description" content="Ši parduotuvė niekuom neprekiauja ji tik pavyzdys. Joje pavaizduotos prekės yra netikros">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"> -->
         <link rel="stylesheet" href="http://localhost/E-Shop-PHP-based/css/normalize.css">
         <link rel="stylesheet" href="http://localhost/E-Shop-PHP-based/css/master.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

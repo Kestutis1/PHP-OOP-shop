@@ -89,3 +89,5 @@ history.pushState({
 function slapukai () {
   document.getElementById("p2").style.display = "none";
 }
+
+// IDEA: Pakeiciam url adresa
