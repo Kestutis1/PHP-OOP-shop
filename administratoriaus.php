@@ -14,6 +14,7 @@
       <div class="flex-container">
 
 <?php
+// IDEA: Jaigu Get gražina kintamuosius tada: iš objekto spausdinam pranešimus.
       if (isset($_GET['sekme'])) {
            $signupCheck = $_GET['sekme'];
            $ikelimo_atsakymas = new signupCheck;
@@ -21,7 +22,7 @@
          }
 
 ?>
-
+<!--Prekės įkėlimo forma -->
         <form name="ikelimas" id="ikelimas" method="post" action="prekes_ikelimas.php" enctype="multipart/form-data">
               <label>Pasirinkti prekės kategoriją</label><br />
                   <select name="kategorija">
@@ -50,19 +51,15 @@
 
 
 <?php
-
-      function current_url() {
-      $current_url = 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . "{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-      return $current_url;
-      }
-
-      $url = current_url();
+// IDEA: Skriptas atsakingas už gražų url adresą be kintamūjų.
       $urlBeKintamuju = new url;
-      $urlBeKintamuju->urlpakeisime($url);
-      $urli = $urlBeKintamuju->urlpakeisime($url);
+      $urlBeKintamuju->current_url();
+      $urli = $urlBeKintamuju->urlpakeisime();
       echo $urli;
-      ?>
+?>
+
       <script>
+      /* JS skriptas kuris pakeičia url*/
        var urli = "<?php echo $urli ?>";
        function url(urli) {
           console.log(urli);
@@ -72,6 +69,7 @@
        }
         url(urli);
      </script>
-     <?php
+
+<?php
   include('includes/footer.php');
- ?>
+?>
