@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 .floatL {
      float: left;
 }
@@ -148,6 +147,13 @@ form select {
 input {
   width: 100%;
 }
+
+.makeRed{
+      border-bottom: 1px solid red ;
+    }
+.makeRedAllBorders{
+      border: 1px solid red ;
+    }
 
 .paieska {
     background-color: #eeaf46;

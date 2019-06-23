@@ -16,7 +16,7 @@
 class url
 {
 
- public $url;
+  public $url;
 
   function current_url() {
     // $this->url = $url;

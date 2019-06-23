@@ -90,4 +90,62 @@ function slapukai () {
   document.getElementById("p2").style.display = "none";
 }
 
-// IDEA: Pakeiciam url adresa
+
+// IDEA: Prekių įkėlima jaigu tušti laukai dažome raudonai.
+$( document ).ready(function() {
+
+   $(".formaSubit").click(function(){
+     var pavadinimas = $("#prePavadinimas").val();
+     var kaina = $("#preKaina").val();
+     var aprašymas = $("#aprašymas").val();
+
+     if(!pavadinimas){
+
+       $("#prePavadinimas").addClass("makeRed");
+     }
+       else
+       {
+       $("#prePavadinimas").removeClass("makeRed");
+       }
+  if(!kaina){
+
+       $("#preKaina").addClass("makeRed");
+     }
+       else
+       {
+       $("#preKaina").removeClass("makeRed");
+       }
+  if (!aprašymas) {
+
+      $("#aprašymas").addClass("makeRedAllBorders");
+  }
+      else
+      {
+      $("#aprašymas").remoweClass("makeRedAllBorders");
+      }
+   });
+    $("#prePavadinimas").click(function(){
+      $("#prePavadinimas").removeClass("makeRed");
+   });
+  $("#preKaina").click(function(){
+    $("#preKaina").removeClass("makeRed");
+  });
+  $("#aprašymas").click(function(){
+    $("#aprašymas").removeClass("makeRedAllBorders");
+  })
+});
+
+
+
+//IDEA: Jaigu privalomi laukai neužpildyti neleis išsiūsti formą.
+function empty() {
+  var pavadinimas = document.getElementById("prePavadinimas").value;
+  var kaina = document.getElementById("preKaina").value;
+  var aprašymas = document.getElementById("aprašymas").value;
+    if (pavadinimas == "" || kaina == "" || aprašymas == "") {
+        return false;
+    };
+}
+
+// IDEA: Kodas Url švarinti.
+//window.history.replaceState(null, null, window.location.pathname);
