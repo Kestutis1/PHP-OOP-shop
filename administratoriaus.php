@@ -11,7 +11,7 @@
 
 <section>
   <article>
-      <div class="flex-container">
+      <div id="centras" class="flex-container">
 
 <?php
 // IDEA: Jaigu Get gražina kintamuosius tada: iš objekto spausdinam pranešimus.
@@ -43,7 +43,7 @@
                     <input type="button" id="loadFileXml" value="Pasirinkti nuotrauką" onclick="document.getElementById('nuotrauka').click();"/>
                 <label for="aprašymas">Prekės aprašymas</label><br/>
                     <textarea id="aprašymas" name="aprašymas" rows="8" cols="40"></textarea><br /><br />
-                    <input class="mygtukas formaSubit" type="submit" name="ĮkeltiPrekę" value="Įkelti" onClick="return empty()" />
+                    <input class="mygtukas formaSubit" type="submit" name="ĮkeltiPrekę" value="Įkelti" onClick="zinute(); empty();" />
           </form>
       </div>
     </article>

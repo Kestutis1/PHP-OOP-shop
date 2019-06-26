@@ -147,5 +147,11 @@ function empty() {
     };
 }
 
+function zinute() {
+  var pavadinimas = document.getElementById("prePavadinimas").value;
+  if (pavadinimas == "") {
+        document.getElementsByClassName('flex-container').innerHTML += "<p class='centre'>Jūs neįrašėte prekės pavadinimo.</p>";
+  }
+}
 // IDEA: Kodas Url švarinti.
 //window.history.replaceState(null, null, window.location.pathname);
